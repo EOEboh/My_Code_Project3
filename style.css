@@ -1,0 +1,75 @@
+body{
+    background-color: darkgoldenrod;
+}
+
+#header{
+    background-image: url("laptop.jpg");
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+#logo{
+    text-align: left;
+    padding: 10px 2px;
+    width: 33.3%;
+    color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-shadow: 8px 8px 15px black;
+    background-color: darkslategray;
+}
+
+
+#ul{
+    list-style-type: none; /* removing the browser default values*/
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    width: 33.3%;
+}
+li {
+    float:left;
+    background-color: black;
+    
+}
+li a{
+    display:block;
+    padding: 10px 15px;
+    text-decoration: none;  
+    
+    
+}
+.homebtn,
+.servicesbtn,
+.aboutbtn{
+    margin: 0 20px;
+    padding: 10px;
+    color: darkslategray;
+    cursor: pointer;
+}
+.homebtn{
+    margin: 0 20px 0 0;
+}
+.homedropdown,
+.servicesdropdown,
+.aboutdropdown{
+    display: none;
+    position: absolute;
+    background-color: darkgrey;
+    box-shadow: 8px 8px 8px darkgrey;
+}
+.home:hover .homedropdown{
+    display: block;
+}
+.services:hover .servicesdropdown{
+    display: block;
+}
+.about:hover .aboutdropdown{
+    display: block;
+}
+.homebtn:hover,
+.servicesbtn:hover,
+.aboutbtn:hover{
+    background-color: darkred;
+}  
